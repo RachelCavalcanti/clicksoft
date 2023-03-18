@@ -20,4 +20,4 @@ class AlunoSchema extends Schema {
   }
 }
 
-module.exports = AlunoSchema
+module.exports =  AlunoSchema

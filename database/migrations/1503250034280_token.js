@@ -20,4 +20,4 @@ class TokensSchema extends Schema {
   }
 }
 
-module.exports = TokensSchema
+export default TokensSchema

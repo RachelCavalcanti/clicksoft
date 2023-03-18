@@ -20,4 +20,4 @@ class CadastroSchema extends Schema {
   }
 }
 
-module.exports = CadastroSchema
+module.exports =  CadastroSchema

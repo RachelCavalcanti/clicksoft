@@ -21,4 +21,4 @@ class ProfessorSchema extends Schema {
   }
 }
 
-module.exports = ProfessorSchema
+module.exports =  ProfessorSchema

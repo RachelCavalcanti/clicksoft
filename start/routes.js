@@ -40,9 +40,9 @@ Route.post('/professor', 'ProfessorController.store');
 
 Route.get('/professor', 'ProfessorController.list');
 
-Route.get('/professor/:id', 'ProfessorController.show');
-
 Route.delete('/professor/:id', 'ProfessorController.delete');
+
+Route.get('/professor/:id', 'ProfessorController.show');
 
 Route.post('/professor', 'SalaController.store');
 

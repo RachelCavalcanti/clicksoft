@@ -12,22 +12,22 @@ class AlunoController {
 
   }
 
-  async show({ params }) {
-    return await Aluno.find(params.id);
-  }
-
   async update({ params, request }) {
 
-    const aluno = await Course.findOrFail(params.id);
+    const aluno = await Aluno.findOrFail(params.id);
 
     const dataToUpdate = request.only(['name', 'e-mail', 'matricula', 'data nascimento']);
 
-    course.merge(dataToUpdate);
+    aluno.merge(dataToUpdate);
 
     await aluno.save();
 
     return aluno;
 
+}
+
+  async show({ params }) {
+    return await Aluno.find(params.id);
   }
 
   async delete({ params }) {
@@ -37,7 +37,7 @@ class AlunoController {
     await aluno.delete();
 
     return {
-      message: 'Cadastro deletado!'
+      message: 'Dados deletados!'
     }
 
   }
