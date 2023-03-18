@@ -57,7 +57,7 @@ Route.get('/professor/:id', 'ProfessorController.show');
 
 Route.post('/sala', 'SalaController.store');
 
-Route.put('/sala/:id, SalaController.update');
+Route.put('/sala/:id', 'SalaController.update');
 
 Route.delete('/sala/:id', 'SalaController.delete');
 

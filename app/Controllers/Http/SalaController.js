@@ -14,7 +14,7 @@ class SalaController {
 //alocar aluno? apresentará conflito quando retornar a informação?
 async store({ request }) {
 
-  const dataToCreate = request.only(['aluno','professor','numero sala']);
+  const dataToCreate = request.only(['nome aluno','nome professor','numero sala']);
 
   return await Aluno.create(dataToCreate);
 

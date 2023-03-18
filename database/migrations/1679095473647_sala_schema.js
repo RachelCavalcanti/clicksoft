@@ -7,6 +7,13 @@ class SalaSchema extends Schema {
   up () {
     this.create('salas', (table) => {
       table.increments()
+
+      .integer('user_id')
+      .unsigned()
+      .references('id')
+      .inTable('users')
+      .onUpdate('CASCADE')
+      .onDelete('CASCADE')
       table.decimal('numero sala', 10).notNullable()
       table.decimal('capacidade de aluno', 60).notNullable()
       table.decimal('disponibilidade', 64).notNullable()
