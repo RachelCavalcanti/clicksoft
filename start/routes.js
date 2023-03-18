@@ -36,7 +36,7 @@ Route.get('/clicksoft/:id', 'CadastroController.show');
 
 Route.post('/aluno', 'AlunoController.store');
 
-Route.put('/aluno/:id', 'AlunoController.updte');
+Route.put('/aluno/:id', 'AlunoController.update');
 
 Route.delete('/aluno/:id', 'AlunoController.delete');
 
