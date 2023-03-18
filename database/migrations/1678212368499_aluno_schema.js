@@ -7,7 +7,7 @@ class AlunoSchema extends Schema {
   up () {
     this.create('alunos', (table) => {
       table.increments()
-      table.string('name', 64).notNullable()
+      table.string('name', 90).notNullable()
       table.string('e-mail', 104).notNullable()
       table.decimal('matricula', 64).notNullable()
       table.decimal('data nascimento', 64).notNullable()

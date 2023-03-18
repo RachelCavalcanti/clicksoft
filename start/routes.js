@@ -24,36 +24,46 @@ Route.get('/', () => {
 
 Route.post('/clicksoft', 'CadastroController.store');
 
+Route.put('/clicksoft/:id', 'CadastroController.update');
+
+Route.delete('/clicksoft/:id', 'CadastroController.delete');
+
 Route.get('/clicksoft', 'CadastroController.list');
 
 Route.get('/clicksoft/:id', 'CadastroController.show');
 
-Route.put('/clicksoft/:id', 'CadastroController.update');
+//routes aluno
 
 Route.post('/aluno', 'AlunoController.store');
 
-Route.get('/aluno/:id', 'AlunoController.show');
+Route.put('/aluno/:id', 'AlunoController.updte');
 
 Route.delete('/aluno/:id', 'AlunoController.delete');
 
+Route.get('/aluno/:id', 'AlunoController.show');
+
+
+//routes professor
+
 Route.post('/professor', 'ProfessorController.store');
 
-Route.get('/professor', 'ProfessorController.list');
+Route.put('/professor/:id', 'ProfessorController.update');
 
 Route.delete('/professor/:id', 'ProfessorController.delete');
 
 Route.get('/professor/:id', 'ProfessorController.show');
 
-Route.post('/professor', 'SalaController.store');
-
-Route.get('/professor', 'SalaController.list');
-
-Route.get('/professor/:id', 'SalaController.show');
-
-Route.delete('/professor/:id', 'SalaController.delete');
+// routes sala
 
 Route.post('/sala', 'SalaController.store');
 
+Route.put('/sala/:id, SalaController.update');
+
+Route.delete('/sala/:id', 'SalaController.delete');
+
+Route.get('/sala', 'SalaController.list');
+
+Route.get('/sala/:id', 'SalaController.show');
 
 })
 

@@ -10,6 +10,10 @@ class SalaSchema extends Schema {
       table.decimal('numero sala', 10).notNullable()
       table.decimal('capacidade de aluno', 60).notNullable()
       table.decimal('disponibilidade', 64).notNullable()
+      table.string('aluno', 90).notNullable()
+      table.string('professor',90).notNullable()
+      table.decimal( 'numero sala', 10).notNullable() // redundante?
+
       table.timestamps()
     })
   }
