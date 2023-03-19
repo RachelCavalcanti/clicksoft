@@ -14,13 +14,8 @@
 */
 
 /** @type {typeof import('@adonisjs/framework/src/Route/Manager')} */
+
 const Route = use('Route')
-
-Route.group(() => {
-
-Route.get('/', () => {
-  return { greeting: ' Deus e fiel o tempo todo in JSON' }
-})
 
 Route.post('/clicksoft', 'CadastroController.store');
 
@@ -65,5 +60,4 @@ Route.get('/sala', 'SalaController.list');
 
 Route.get('/sala/:id', 'SalaController.show');
 
-})
 
