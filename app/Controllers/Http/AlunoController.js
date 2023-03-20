@@ -11,7 +11,7 @@ class AlunoController {
     return await Aluno.create(dataToCreate);
 
   }
-
+  
   async update({ params, request }) {
 
     const aluno = await Aluno.findOrFail(params.id);
